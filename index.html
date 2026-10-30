@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD231Home Page">
+    <meta name="author" content="Matthew Remington">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link href="styles/base.css" rel="stylesheet" >
+    <link href="styles/larger.css" rel="stylesheet">
+    <title>WDD231 Home</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <img class="logo" id="site-logo" src="images/square-placeholder.svg">
+        <h1 id="name-me">MJ. Remington</h1>
+        <a id="hamburger-close" role="button" tabindex="0" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+            <img src="images/menu-open.svg" alt="">
+        </a>
+    </header>
+    <nav id="site-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber Project</a></li>
+            <li><a href="final.html">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="pageID"><h2>Home</h2></div>
+        <section class="main-content">
+            <div class="main-card" id="about-me">
+                <h3>About Me</h3>
+                <p>
+                    This is the about me section. It describes me perfectly and totally.
+                </p>
+            </div>
+            <div class="main-card" id="photo-me">
+                <h3>Student Photo</h3>
+                <img src="images/square-placeholder.svg" alt="Student Photo">
+            </div>
+            <div class="main-card" id="courses">
+                <h3>Web Certificate Courses</h3>
+                <div class="course-filters">
+                    <div class="course-filter" id="course-all">
+                        <a>All</a>
+                    </div>
+                    <div class="course-filter" id="course-CSE">
+                        <a>CSE</a>
+                    </div>
+                    <div class="course-filter" id="course-WDD">
+                        <a>WDD</a>
+                    </div>
+                </div>
+                <div class="course-list" id="course-list">
+                    <a>WDD 130</a>
+                    <a>WDD 131</a>
+                    <a>WDD 231</a>
+                </div>
+                <p class="course-credits" id="course-credits"></p>
+            </div>
+        </section>
+        <section class="socials">
+            <div class="social-icon">
+                <a>
+                    <img src="images/linkedin.svg">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a>
+                    <img src="images/github.svg">
+                </a>
+            </div>
+            <div class="social-icon">
+                <a>
+                    <img src="images/instagram.svg">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Matthew Remington - Idaho, USA</p>
+        <p id="modified">Last Modification</p>
+    </footer>
 </body>
 </html>

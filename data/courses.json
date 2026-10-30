@@ -1,0 +1,8 @@
+[
+    { "subject": "WDD", "number": 130, "name": "Web Fundamentals", "credits": 2, "url": "" },
+    { "subject": "WDD", "number": 131, "name": "Dynamic Web Fundamentals", "credits": 2, "url": "" },
+    { "subject": "WDD", "number": 231, "name": "Web Frontend Development I", "credits": 2, "url": "" },
+    { "subject": "CSE", "number": 110, "name": "Introduction to Programming", "credits": 2, "url": "" },
+    { "subject": "CSE", "number": 111, "name": "Programming with Functions", "credits": 2, "url": "" },
+    { "subject": "CSE", "number": 210, "name": "Programming with Classes", "credits": 2, "url": "" }
+]
