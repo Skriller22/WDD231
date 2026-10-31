@@ -38,6 +38,10 @@
         gap: 1rem;
     }
 
+    .about-me-text {
+        margin: 0.5rem;
+    }
+
     #courses {
         grid-column: 1 / 3;
     }
