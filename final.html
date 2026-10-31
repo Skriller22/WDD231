@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 final project for Matthew Remington: information about the final project for the Web and Computer Programming certificate courses.">
+    <meta name="author" content="Matthew Remington">
+    <title>WDD231 Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" id="site-logo" src="images/square-placeholder.svg" alt="Site logo" width="56" height="56">
+        <span id="name-me">MJ. Remington</span>
+        <button type="button" id="hamburger-close" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+            <img src="images/menu-open.svg" alt="" width="28" height="28">
+        </button>
+    </header>
+    <nav id="site-nav" aria-label="Main">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html" aria-current="page">Final</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="socials">
+            <a class="social-icon" href="https://github.com/Skriller22" aria-label="GitHub">
+                <img src="images/github.svg" alt="" width="64" height="64">
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/in/matthew-remington-25a759235?utm_source=share_via&utm_content=profile&utm_medium=member_ios" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="" width="64" height="64">
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/remington_matthew/" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="" width="64" height="64">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> - Matthew Remington - Idaho, USA</p>
+        <p id="lastModified">Last Modification</p>
+    </footer>
+</body>
+</html>

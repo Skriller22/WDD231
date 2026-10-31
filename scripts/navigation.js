@@ -10,9 +10,3 @@ function toggleMenu() {
 }
 
 menuButton.addEventListener("click", toggleMenu);
-menuButton.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        toggleMenu();
-    }
-});

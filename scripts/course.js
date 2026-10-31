@@ -11,15 +11,15 @@ function displayCourses(subject) {
 
     courseList.innerHTML = "";
     visible.forEach(course => {
-        const item = document.createElement("a");
+        const item = document.createElement("span");
         item.textContent = `${course.subject} ${course.number}`;
         item.title = course.name;
-        if (course.url) item.href = course.url;
+        item.classList.toggle("completed", course.completed);
         courseList.appendChild(item);
     });
 
     const totalCredits = visible.reduce((sum, course) => sum + course.credits, 0);
-    creditTotal.textContent = `The total credits for course listed above is ${totalCredits}`;
+    creditTotal.textContent = `The total credits for courses listed above is ${totalCredits}`;
 }
 
 async function loadCourses() {

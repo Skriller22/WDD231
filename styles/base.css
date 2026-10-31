@@ -1,7 +1,12 @@
 :root {
     --branding-c1: rgb(37, 37, 37);
     --branding-c2: rgb(90, 110, 96);
-    --branding-c3: rgb(217, 219, 218); 
+    --branding-c3: rgb(217, 219, 218);
+    --branding-cdarker: rgba(37, 37, 37, 0.8);
+    --branding-clighter: rgba(255, 255, 255, 0.2);
+    --branding-bd1: solid black 1px;
+    --branding-bd2: solid black 2px;
+    --max-width: 320px;
 }
 
 a {
@@ -23,6 +28,7 @@ li {
 }
 
 body {
+    font-family: "Lato", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +40,7 @@ header {
     justify-content: space-between;
     padding: 8px;
     width: 100%;
-    max-width: 320px;
+    max-width: var(--max-width);
 }
 
 #site-logo {
@@ -44,11 +50,16 @@ header {
 
 #name-me {
     margin: auto 0;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #hamburger-close {
     display: flex;
     align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 #hamburger-close, #hamburger-close img {
@@ -58,13 +69,13 @@ header {
 
 #hamburger-close img {
     background-color: grey;
-    border: solid black 1px;
+    border: var(--branding-bd1);
     padding: 4px;
 }
 
 nav {
     display: none;
-    max-width: 320px;
+    max-width: var(--max-width);
     width: 100%;
 }
 
@@ -77,14 +88,14 @@ nav ul {
 }
 
 nav ul li {
-    border-top: solid black 1px;
+    border-top: var(--branding-bd1);
     background-color: var(--branding-c2);
     width: 100%;
     height: 100%;
 }
 
 nav ul:last-child {
-    border-bottom: solid black 1px;
+    border-bottom: var(--branding-bd1);
 }
 
 nav ul li a {
@@ -99,13 +110,27 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--branding-c1);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--branding-clighter);
+}
+
+nav ul li a[aria-current="page"] {
+    font-weight: bold;
+    background-color: var(--branding-cdarker);
+}
+
+nav ul li a[aria-current="page"]:hover {
+    color: white;
+    background-color: var(--branding-c1);
 }
 
 main {
-    border-top: solid black 1px;
-    padding-top: 1rem;
-    max-width: 320px;
+    border-top: var(--branding-bd2);
+    padding: 1rem 8px 0;
+    max-width: var(--max-width);
+}
+
+main h1 {
+    text-align: center;
 }
 
 .main-card {
@@ -113,7 +138,7 @@ main {
     margin: 0.5rem 0;
 }
 
-.main-card h3 {
+.main-card h2 {
     padding: 4px;
     text-align: center;
     color: white;
@@ -131,12 +156,13 @@ main {
     flex-direction: column;
 }
 
-#photo-me h3 {
+#photo-me h2 {
     width: 100%;
 }
 
 #photo-me img {
     width: 100%;
+    height: auto;
 }
 
 #courses {
@@ -159,21 +185,14 @@ main {
     margin: 4px 0px;
     width: 82px;
     height: 36px;
-    max-height: 32px;
-}
-
-.course-filter a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    font-family: inherit;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 0 16px;
-    height: 100%;
-    width: 100%;
+    color: inherit;
+    cursor: pointer;
 }
 
-.course-filter a:hover {
+.course-filter:hover {
     color: white;
     background-color: var(--branding-c2);
 }
@@ -187,7 +206,7 @@ main {
     padding-top: 8px;
 }
 
-.course-list a {
+.course-list span {
     background-color: var(--branding-c3);
     border: solid black 1px;
     display: block;
@@ -196,9 +215,14 @@ main {
     padding: 0.5rem;
 }
 
-.course-list a:hover {
+.course-list span.completed {
     color: white;
     background-color: var(--branding-c2);
+    border-color: var(--branding-c1);
+}
+
+.course-list span.completed::after {
+    content: " \2713";
 }
 
 #course-credits {
@@ -211,10 +235,13 @@ main {
 .socials {
     display: flex;
     justify-content: space-around;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
 .socials img {
     width: 64px;
+    height: auto;
 }
 
 footer {

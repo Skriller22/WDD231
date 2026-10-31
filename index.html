@@ -3,86 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD231Home Page">
+    <meta name="description" content="WDD231 home page for Matthew Remington: about me, student photo, and Web and Computer Programming certificate courses.">
     <meta name="author" content="Matthew Remington">
+    <title>WDD231 Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
     <script src="scripts/course.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <link href="styles/base.css" rel="stylesheet" >
-    <link href="styles/larger.css" rel="stylesheet">
-    <title>WDD231 Home</title>
 </head>
 <body>
     <header>
-        <img class="logo" id="site-logo" src="images/square-placeholder.svg">
-        <h1 id="name-me">MJ. Remington</h1>
-        <a id="hamburger-close" role="button" tabindex="0" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
-            <img src="images/menu-open.svg" alt="">
-        </a>
+        <img class="logo" id="site-logo" src="images/square-placeholder.svg" alt="Site logo" width="56" height="56">
+        <span id="name-me">MJ. Remington</span>
+        <button type="button" id="hamburger-close" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+            <img src="images/menu-open.svg" alt="" width="28" height="28">
+        </button>
     </header>
-    <nav id="site-nav">
+    <nav id="site-nav" aria-label="Main">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="chamber.html">Chamber Project</a></li>
-            <li><a href="final.html">Final Project</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
         </ul>
     </nav>
     <main>
-        <div id="pageID"><h2>Home</h2></div>
-        <section class="main-content">
-            <div class="main-card" id="about-me">
-                <h3>About Me</h3>
+        <h1 id="pageID">Home</h1>
+        <div class="main-content">
+            <section class="main-card" id="about-me">
+                <h2>About Me</h2>
                 <p>
                     This is the about me section. It describes me perfectly and totally.
+                    I like to do things and I am a person. I have a lot of hobbies and interests, and I am very good at them all. I am also very humble and modest about my abilities.
                 </p>
-            </div>
-            <div class="main-card" id="photo-me">
-                <h3>Student Photo</h3>
-                <img src="images/square-placeholder.svg" alt="Student Photo">
-            </div>
-            <div class="main-card" id="courses">
-                <h3>Web Certificate Courses</h3>
+            </section>
+            <section class="main-card" id="photo-me">
+                <h2>Student Photo</h2>
+                <img src="images/square-placeholder.svg" alt="Student Photo" width="320" height="320">
+            </section>
+            <section class="main-card" id="courses">
+                <h2>Web Certificate Courses</h2>
                 <div class="course-filters">
-                    <div class="course-filter" id="course-all">
-                        <a>All</a>
-                    </div>
-                    <div class="course-filter" id="course-CSE">
-                        <a>CSE</a>
-                    </div>
-                    <div class="course-filter" id="course-WDD">
-                        <a>WDD</a>
-                    </div>
+                    <button type="button" class="course-filter" id="course-all">All</button>
+                    <button type="button" class="course-filter" id="course-WDD">WDD</button>
+                    <button type="button" class="course-filter" id="course-CSE">CSE</button>
                 </div>
-                <div class="course-list" id="course-list">
-                    <a>WDD 130</a>
-                    <a>WDD 131</a>
-                    <a>WDD 231</a>
-                </div>
+                <div class="course-list" id="course-list"></div>
                 <p class="course-credits" id="course-credits"></p>
-            </div>
-        </section>
-        <section class="socials">
-            <div class="social-icon">
-                <a>
-                    <img src="images/linkedin.svg">
-                </a>
-            </div>
-            <div class="social-icon">
-                <a>
-                    <img src="images/github.svg">
-                </a>
-            </div>
-            <div class="social-icon">
-                <a>
-                    <img src="images/instagram.svg">
-                </a>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2026 - Matthew Remington - Idaho, USA</p>
-        <p id="modified">Last Modification</p>
+        <div class="socials">
+            <a class="social-icon" href="https://github.com/Skriller22" aria-label="GitHub">
+                <img src="images/github.svg" alt="" width="64" height="64">
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/in/matthew-remington-25a759235?utm_source=share_via&utm_content=profile&utm_medium=member_ios" aria-label="LinkedIn">
+                <img src="images/linkedin.svg" alt="" width="64" height="64">
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/remington_matthew/" aria-label="Instagram">
+                <img src="images/instagram.svg" alt="" width="64" height="64">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> - Matthew Remington - Idaho, USA</p>
+        <p id="lastModified">Last Modification</p>
     </footer>
 </body>
 </html>

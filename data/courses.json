@@ -1,8 +1,15 @@
 [
-    { "subject": "WDD", "number": 130, "name": "Web Fundamentals", "credits": 2, "url": "" },
-    { "subject": "WDD", "number": 131, "name": "Dynamic Web Fundamentals", "credits": 2, "url": "" },
-    { "subject": "WDD", "number": 231, "name": "Web Frontend Development I", "credits": 2, "url": "" },
-    { "subject": "CSE", "number": 110, "name": "Introduction to Programming", "credits": 2, "url": "" },
-    { "subject": "CSE", "number": 111, "name": "Programming with Functions", "credits": 2, "url": "" },
-    { "subject": "CSE", "number": 210, "name": "Programming with Classes", "credits": 2, "url": "" }
+    { "subject": "WDD", "number": 130, "name": "Web Fundamentals", "credits": 2, "completed": true },
+    { "subject": "WDD", "number": 131, "name": "Dynamic Web Fundamentals", "credits": 2, "completed": true },
+    { "subject": "WDD", "number": 230, "name": "Web Frontend Development I", "credits": 2, "completed": true },
+    { "subject": "WDD", "number": 231, "name": "Web Frontend Development I", "credits": 2, "completed": false },
+    { "subject": "WDD", "number": 330, "name": "Web Frontend Development II", "credits": 3, "completed": true },
+    { "subject": "WDD", "number": 340, "name": "Web Backend Development", "credits": 3, "completed": true },
+    { "subject": "WDD", "number": 341, "name": "Web Services", "credits": 3, "completed": true },
+    { "subject": "WDD", "number": 430, "name": "Web Full-Stack Development", "credits": 3, "completed": false },
+    { "subject": "CSE", "number": 110, "name": "Introduction to Programming", "credits": 2, "completed": true },
+    { "subject": "CSE", "number": 111, "name": "Programming with Functions", "credits": 2, "completed": true },
+    { "subject": "CSE", "number": 210, "name": "Programming with Classes", "credits": 2, "completed": true },
+    { "subject": "CSE", "number": 211, "name": "Programming with Data Structures", "credits": 2, "completed": true },
+    { "subject": "CSE", "number": 270, "name": "Software Testing", "credits": 2, "completed": true }
 ]
